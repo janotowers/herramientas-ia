@@ -57,6 +57,27 @@ Ejemplo:
 
 ---
 
+### Integraciones (si aplica)
+
+Define qué sistemas externos o internos debe utilizar la implementación. 
+Esto evita que la IA invente dependencias o utilice servicios no autorizados.
+
+Puede incluir:
+- APIs externas
+- bases de datos
+- servicios internos
+- colas de mensajes
+- almacenamiento externo
+
+Ejemplo:
+
+- API de pagos Stripe
+- Base de datos PostgreSQL existente
+- Servicio interno de autenticación
+- Cola de mensajes RabbitMQ
+
+---
+
 ### Input esperado
 
 Define los datos de entrada.
@@ -65,6 +86,18 @@ Ejemplo:
 
 ```python
 InputObject
+- field_1: type
+- field_2: type
+```
+
+### Output esperado
+
+Define el resultado que debe producir la implementación.
+
+Ejemplo:
+
+```python
+OutputObject
 - field_1: type
 - field_2: type
 ```
@@ -82,3 +115,5 @@ El trabajo se considera terminado cuando:
 
 - El código pasa linters y convenciones de estilo adoptadas por el equipo (ej: flake8, black).
 - La cobertura de tests unitarios es al menos 90%.
+- La funcionalidad cumple con el comportamiento esperado definido en el brief.
+- La implementación produce el output definido.
