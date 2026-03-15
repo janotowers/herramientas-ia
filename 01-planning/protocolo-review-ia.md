@@ -24,6 +24,7 @@ La IA puede inventar:
 - [ ] Los imports existen
 - [ ] Las funciones usadas son reales
 - [ ] La API corresponde a la versión actual
+- [ ] Las dependencias están fijadas a versiones compatibles
 
 ## 2. Lógica de negocio sutil
 
@@ -66,6 +67,7 @@ La IA puede generar código funcional pero inseguro.
 - [ ] No hay riesgo de inyección
 - [ ] No se exponen credenciales
 - [ ] No se filtran datos sensibles
+- [ ] Autenticación y permisos manejados correctamente
 
 ## 4. Context window
 
@@ -105,6 +107,8 @@ Este punto depende de tu stack o arquitectura.
 - [ ] Logs no exponen datos sensibles
 - [ ] Performance es aceptable
 - [ ] Métricas funcionan correctamente
+- [ ] El código es claro y mantenible
+- [ ] No hay complejidad innecesaria
 
 ## Resultado del Review
 
